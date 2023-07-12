@@ -11,4 +11,5 @@ end
 
 group :plugins do
   gem "vagrant-aws" , path: "."
+  gem "fog-aws", "~> 2.0"
 end
