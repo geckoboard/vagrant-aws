@@ -1,4 +1,4 @@
-require "fog"
+require "fog/aws"
 require "log4r"
 
 module VagrantPlugins
@@ -22,7 +22,7 @@ module VagrantPlugins
 
           # Build the fog config
           fog_config = {
-            :provider => :aws,
+            :provider => 'AWS',
             :region   => region
           }
           if region_config.use_iam_profile

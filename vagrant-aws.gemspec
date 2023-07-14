@@ -13,10 +13,9 @@ Gem::Specification.new do |s|
   s.description   = "Enables Vagrant to manage machines in EC2 and VPC."
 
   s.required_rubygems_version = ">= 1.3.6"
-  s.rubyforge_project         = "vagrant-aws"
 
-  s.add_runtime_dependency "fog", "~> 1.22"
-  s.add_runtime_dependency "iniparse", "~> 1.4", ">= 1.4.2"
+  s.add_runtime_dependency "fog-aws", "~> 2.0"
+  s.add_runtime_dependency "iniparse", "~> 1.5"
 
   s.add_development_dependency "rake"
   # rspec 3.4 to mock File
