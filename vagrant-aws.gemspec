@@ -2,13 +2,12 @@ $:.unshift File.expand_path("../lib", __FILE__)
 require "vagrant-aws/version"
 
 Gem::Specification.new do |s|
-  s.name          = "vagrant-aws"
+  s.name          = "vagrant-gecko-aws"
   s.version       = VagrantPlugins::AWS::VERSION
   s.platform      = Gem::Platform::RUBY
   s.license       = "MIT"
-  s.authors       = "Mitchell Hashimoto"
-  s.email         = "mitchell@hashicorp.com"
-  s.homepage      = "http://www.vagrantup.com"
+  s.authors       = "Mitchell Hashimoto, Geckoboard Devs"
+  s.homepage      = "https://github.com/geckoboard/vagrant-aws"
   s.summary       = "Enables Vagrant to manage machines in EC2 and VPC."
   s.description   = "Enables Vagrant to manage machines in EC2 and VPC."
 

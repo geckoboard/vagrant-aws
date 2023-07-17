@@ -1,19 +1,22 @@
 # Vagrant AWS Provider
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/mitchellh/vagrant-aws?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-<span class="badges">
-[![Gem Version](https://badge.fury.io/rb/vagrant-aws.png)][gem]
-[![Dependency Status](https://gemnasium.com/mitchellh/vagrant-aws.png)][gemnasium]
-</span>
+> **Warning**
+>
+> This is a fork of the original [plugin](https://github.com/mitchellh/vagrant-aws)
+> with updated dependencies so that it works with the latest versions of
+> vagrant.
+>
+> The fork will be maintained to the extent that it is kept working, but will
+> not be providing any new functionality or support, it is shared and published
+> only to assist people wanting to continue using the plugin themselves.
 
-[gem]: https://rubygems.org/gems/vagrant-aws
-[gemnasium]: https://gemnasium.com/mitchellh/vagrant-aws
+[![Gem Version](https://badge.fury.io/rb/vagrant-gecko-aws.png)](https://rubygems.org/gems/vagrant-gecko-aws)
 
-This is a [Vagrant](http://www.vagrantup.com) 1.2+ plugin that adds an [AWS](http://aws.amazon.com)
+This is a [Vagrant](http://www.vagrantup.com) 2.3.7+ plugin that adds an [AWS](http://aws.amazon.com)
 provider to Vagrant, allowing Vagrant to control and provision machines in
 EC2 and VPC.
 
-**NOTE:** This plugin requires Vagrant 1.2+,
+**NOTE:** This plugin requires Vagrant 2.3.7+,
 
 ## Features
 
@@ -32,7 +35,7 @@ installing, `vagrant up` and specify the `aws` provider. An example is
 shown below.
 
 ```
-$ vagrant plugin install vagrant-aws
+$ vagrant plugin install vagrant-gecko-aws --entry-point vagrant-aws
 ...
 $ vagrant up --provider=aws
 ...
